@@ -1,0 +1,20 @@
+{"label": "A000", "text": "Cholera due to Vibrio cholerae 01, biovar cholerae"}
+{"label": "A001", "text": "Cholera due to Vibrio cholerae 01, biovar eltor"}
+{"label": "A009", "text": "Cholera, unspecified"}
+{"label": "A0100", "text": "Typhoid fever, unspecified"}
+{"label": "A0101", "text": "Typhoid meningitis"}
+{"label": "A0102", "text": "Typhoid fever with heart involvement"}
+{"label": "A0103", "text": "Typhoid pneumonia"}
+{"label": "A0104", "text": "Typhoid arthritis"}
+{"label": "A0105", "text": "Typhoid osteomyelitis"}
+{"label": "A0109", "text": "Typhoid fever with other complications"}
+{"label": "A011", "text": "Paratyphoid fever A"}
+{"label": "A012", "text": "Paratyphoid fever B"}
+{"label": "A013", "text": "Paratyphoid fever C"}
+{"label": "A014", "text": "Paratyphoid fever, unspecified"}
+{"label": "A020", "text": "Salmonella enteritis"}
+{"label": "A021", "text": "Salmonella sepsis"}
+{"label": "A0220", "text": "Localized salmonella infection, unspecified"}
+{"label": "A0221", "text": "Salmonella meningitis"}
+{"label": "A0222", "text": "Salmonella pneumonia"}
+{"label": "A0223", "text": "Salmonella arthritis"}

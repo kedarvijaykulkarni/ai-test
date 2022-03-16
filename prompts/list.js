@@ -1,4 +1,4 @@
-const mantiumAi = require('mantiumclient-js');
+const mantiumAi = require('@mantium/mantiumapi');
 
 (async () => {
   await mantiumAi.Auth().accessTokenLogin({
@@ -14,7 +14,7 @@ const mantiumAi = require('mantiumclient-js');
     });
 
   /*
-  * API Key is set on above 
+  * API Key is set on above
   * mantiumAi.api_key=`key`
   * so we can call these method directly now
   */
@@ -26,5 +26,5 @@ const mantiumAi = require('mantiumclient-js');
 
 /*
 * run command
-* node prompt/list.js
+* node prompts/list.js
 */

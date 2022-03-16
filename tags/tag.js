@@ -1,4 +1,4 @@
-const mantiumAi = require('mantiumclient-js');
+const mantiumAi = require('@mantium/mantiumapi');
 
 (async () => {
   await mantiumAi.Auth().accessTokenLogin({
@@ -11,7 +11,7 @@ const mantiumAi = require('mantiumclient-js');
     });
 
   /*
-  * API Key is set on above 
+  * API Key is set on above
   * mantiumAi.api_key=`key`
   * so we can call these method directly now
   */
@@ -19,7 +19,7 @@ const mantiumAi = require('mantiumclient-js');
   let tag_id = undefined;
 
   await mantiumAi.Tags().create({
-    name: 'tag name 1',
+    name: 'tag name 4',
     description: 'Some description'
   }).then((response) => {
     // save this tag id to edit the same tag
@@ -28,26 +28,26 @@ const mantiumAi = require('mantiumclient-js');
     console.log(response);
   });
 
-  await mantiumAi.Tags().retreive(tag_id).then((response) => {
-    console.log('*********** Tag Retreive *********');
+  await mantiumAi.Tags().retrieve(tag_id).then((response) => {
+    console.log('*********** Tag retrieve *********');
     console.log(response.data);
   });
 
-  await mantiumAi.Tags().retreiveId(tag_id).then((response) => {
-    console.log('*********** Tag Retreive by id *********');
+  await mantiumAi.Tags().retrieveId(tag_id).then((response) => {
+    console.log('*********** Tag retrieve by id *********');
     console.log(response.data);
   });
 
-  await mantiumAi.Tags().update({
-    id: tag_id,
-    name: 'New tag name',
-    description: 'Some long description'
-  }).then((response) => {
-    // save this tag id to edit the same tag
-    tag_id = response.data.attributes.tag_id;
-    console.log('*********** Tag updated *********');
-    console.log(response);
-  });
+  // await mantiumAi.Tags().update({
+  //   id: tag_id,
+  //   name: 'New tag name',
+  //   description: 'Some long description'
+  // }).then((response) => {
+  //   // save this tag id to edit the same tag
+  //   tag_id = response.data.attributes.tag_id;
+  //   console.log('*********** Tag updated *********');
+  //   console.log(response);
+  // });
 
   await mantiumAi.Tags().list({ 'page': 1, 'size': 20 }).then((response) => {
     console.log('*********** Tag list *********');

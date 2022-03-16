@@ -1,4 +1,4 @@
-const mantiumAi = require('mantiumclient-js');
+const mantiumAi = require('@mantium/mantiumapi');
 
 // Correct way to do this
 
@@ -15,7 +15,7 @@ const mantiumAi = require('mantiumclient-js');
   console.log('********* Login ********');
   console.log(loginResponse);
   /*
-  * API Key is set on above 
+  * API Key is set on above
   * mantiumAi.api_key=`key`
   * so we can call these method directly now
   */

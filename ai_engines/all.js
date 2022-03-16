@@ -1,4 +1,6 @@
-const mantiumAi = require('mantiumclient-js');
+const mantiumAi = require('@mantium/mantiumapi');
+// mantiumAi.ORIGIN = 'https://www.google.com';
+// mantiumAi.API_VERSION = 'v5';
 
 (async () => {
   const loginResponse = await mantiumAi.Auth().accessTokenLogin({
@@ -13,7 +15,7 @@ const mantiumAi = require('mantiumclient-js');
   console.log('********* Login ********');
   console.log(loginResponse);
   /*
-  * API Key is set on above 
+  * API Key is set on above
   * mantiumAi.api_key=`key`
   * so we can call these method directly now
   */

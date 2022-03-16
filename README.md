@@ -22,3 +22,8 @@ JavaScript client for the Mantium AI API. Testing environment
 
 ```
 [Go to Table of Contents](#table-of-contents)
+
+
+// mantiumAi.ORIGIN = 'https://api.staging.mantiumai.com';
+
+// mantiumAi.ORIGIN = 'https://new-api.staging.mantiumai.com'

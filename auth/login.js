@@ -1,4 +1,4 @@
-const mantiumAi = require('mantiumclient-js');
+const mantiumAi = require('@mantium/mantiumapi');
 
 (async () => {
   const loginResponse = await mantiumAi.Auth().accessTokenLogin({

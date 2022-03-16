@@ -1,33 +1,30 @@
 const mantiumAi = require('@mantium/mantiumapi');
 
 (async () => {
-  const loginResponse = await mantiumAi.Auth().accessTokenLogin({
+  await mantiumAi.Auth().accessTokenLogin({
     username: 'kedman1234@gmail.com',
     password: 'Suvarna@12'
   })
     .then((response) => {
       // get bearer_id and set to default
       mantiumAi.api_key = response.data.attributes.bearer_id;
+      console.log(response);
+
       return response;
     });
-  console.log('********* Login ********');
-  console.log(loginResponse);
+
   /*
   * API Key is set on above
   * mantiumAi.api_key=`key`
   * so we can call these method directly now
   */
-  const loginResetResponse = await mantiumAi.Auth().resetPassword({
-    email: 'kedman1234@gmail.com'
-  }).then((response) => {
-    return response;
+  await mantiumAi.Intelets().list({ 'page': 1, 'size': 20 }).then((response) => {
+    console.log('*********** List *********');
+    console.log(response.data);
   });
-  console.log('*********** resetPassword *********');
-  console.log(loginResetResponse);
-
 })();
 
 /*
 * run command
-* node auth/resetPassword.js
+* node --trace-warnings intelets/list.js
 */
