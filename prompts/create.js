@@ -20,38 +20,33 @@ mantiumAi.ORIGIN = 'https://api.staging.mantiumai.com';
   * so we can call these method directly now
   */
   mantiumAi.Prompts('OpenAI').create({
-    "name": "Test prompt name",
-    "intelets": [],
-    "policies": [],
-    "tags": [
-      "f55d1945-add8-4f78-a253-2286a0ae0b26"
-    ],
-    "ai_provider": "OpenAI",
-    "status": "ACTIVE",
-    "description": "Some description about test prompt",
-    "prompt_text": "Just checking the Prompt line",
-    "ai_method": "completion",
-    "default_engine": "davinci",
-    "prompt_parameters": {
-      "basic_settings": {
-        "temperature": "1",
-        "max_tokens": "1024",
-        "frequency_penalty": "1",
-        "presence_penalty": "1",
-        "top_p": "1",
-        "stop_seq": [
-
-        ]
+    ai_engine_id: "ce6850ef-bc78-4f7a-af5f-81fb9d9fb872",
+    name: "Test prompt name",
+    intelets: [],
+    policies: [],
+    tags: [],
+    ai_provider: "OpenAI",
+    status: "ACTIVE",
+    description: "Some description about test prompt",
+    prompt_text: "Just checking the Prompt line",
+    ai_method: "completion",
+    default_engine: "ada",
+    prompt_parameters: {
+      basic_settings: {
+        temperature: 1,
+        max_tokens: 1024,
+        frequency_penalty: 1,
+        presence_penalty: 1,
+        top_p: 1,
+        stop_seq: []
       },
-      "advanced_settings": {
-        "best_of": "10",
-        "n": "2",
-        "logprobs": "10",
-        "echo": false,
-        "stream": false,
-        "logit_bias": [
-
-        ]
+      advanced_settings: {
+        best_of: 10,
+        n: 2,
+        logprobs: 10,
+        echo: false,
+        stream: false,
+        logit_bias: []
       }
     }
   }).then((response) => {

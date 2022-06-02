@@ -1,11 +1,15 @@
 #! /bin/sh
 cd
-cd /home/kedar/work/mantiumclient-js
+cd /home/kedar/projects/mantiumclient-js
 npm run build
 cd
-cd  /home/kedar/work/ai-test
-rm -rf node_modules package-lock.json &&  npm install /home/kedar/work/mantiumclient-js
+cd  /home/kedar/projects/ai-test
+rm -rf node_modules package-lock.json &&  npm install /home/kedar/projects/mantiumclient-js
 
+
+node --trace-warnings provider_integrations/provider_integration.js
+
+# node --trace-warnings notifications/notification.js
 
 # node --trace-warnings hitl/hitl.js
 

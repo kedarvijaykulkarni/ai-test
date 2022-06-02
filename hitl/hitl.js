@@ -23,13 +23,13 @@ const mantiumAi = require('@mantium/mantiumapi');
       console.log(response);
     });
 
-  // await mantiumAi
-  //   .HITL()
-  //   .accept('7c18c7d1-d375-4410-a4a5-fa20c49f1f61')
-  //   .then((response) => {
-  //     console.log('*********** HITL accept response *********');
-  //     console.log(response);
-  //   });
+  await mantiumAi
+    .HITL()
+    .accept('7c18c7d1-d375-4410-a4a5-fa20c49f1f61')
+    .then((response) => {
+      console.log('*********** HITL accept response *********');
+      console.log(response);
+    });
 
   // await mantiumAi
   //   .HITL()
@@ -39,16 +39,16 @@ const mantiumAi = require('@mantium/mantiumapi');
   //     console.log(response);
   //   });
 
-  // await mantiumAi
-  //   .HITL()
-  //   .modifyOutput({
-  //     id: '0189cd42-ec69-4e4c-9fe7-f2445844125d',
-  //     new_output: 'The black book is on left',
-  //   })
-  //   .then((response) => {
-  //     console.log('*********** HITL accept response *********');
-  //     console.log(response);
-  //   });
+  await mantiumAi
+    .HITL()
+    .modifyOutput({
+      id: '0189cd42-ec69-4e4c-9fe7-f2445844125d',
+      new_output: 'The black book is on left',
+    })
+    .then((response) => {
+      console.log('*********** HITL accept response *********');
+      console.log(response);
+    });
 
   await mantiumAi
     .HITL()
@@ -61,13 +61,13 @@ const mantiumAi = require('@mantium/mantiumapi');
       console.log(response);
     });
 
-  await mantiumAi
-    .HITL()
-    .list({ page: 1, size: 2 })
-    .then((response) => {
-      console.log('*********** HITL list response *********');
-      console.log(response);
-    });
+  // await mantiumAi
+  //   .HITL()
+  //   .list({ page: 1, size: 2 })
+  //   .then((response) => {
+  //     console.log('*********** HITL list response *********');
+  //     console.log(response);
+  //   });
 })();
 
 /*
